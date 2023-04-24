@@ -5,7 +5,7 @@ const axios = require('axios')
 
 router.get('/', async (req, res) => {
     try {
-        const apiURL = `https://30-000-radio-stations-and-music-charts.p.rapidapi.com/rapidapi`
+        const apiURL = ``
         const foundData = await axios.get(apiURL)
         const data = foundData.data
         console.log(data)
