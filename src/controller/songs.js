@@ -13,6 +13,7 @@ router.get('/', async (req, res) => {
         // res.render("suggested/show.ejs", {
         //   name: foundData.data
         // })
+        
       } catch(err) {
         console.error(err)
       }
