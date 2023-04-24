@@ -7,14 +7,13 @@ router.get('/', async (req, res) => {
     try {
         const apiURL = `https://30-000-radio-stations-and-music-charts.p.rapidapi.com/rapidapi`
         const foundData = await axios.get(apiURL)
-          console.log(foundData.drink)
-          
-
-        // res.render("suggested/show.ejs", {
-        //   name: foundData.data
-        // })
-        
+        const data = foundData.data
+        console.log(data)
       } catch(err) {
         console.error(err)
       }
+
+    return(
+      <p></p>
+    )
 })
